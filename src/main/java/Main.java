@@ -1,13 +1,16 @@
+import java.util.Scanner;
 public class Main {
-    public static void main(String[] args) {
-        // User details
-        String name = "Jerry";
-        String account = "BO10006789";
+    // User details
+    static String name = "Jerry";
+    static String account = "BO10006789";
 
+    public static void printWelcome(){
         // Welcome to the BankApp
         System.out.println("Welcome " + name);
         System.out.println("Your current account is " + account);
+    }
 
+    public static void printMenu(){
         // Main Menu
         System.out.println(System.lineSeparator());
         System.out.println("********************");
@@ -17,7 +20,8 @@ public class Main {
         System.out.println("(T) My Transactions");
         System.out.println("(E) Exit");
         System.out.println("********************");
-
+    }
+    public static void selectOption(){
         // Press a key to select an option
         try (Scanner scanner = new Scanner(System.in)) {
             char option;
@@ -37,4 +41,14 @@ public class Main {
             } while (option != 'E');
         }
     }
+    public static void main(String[] args) {
+        // Welcome to the BankApp
+        printWelcome();
+        // Main Menu
+        printMenu();
+        // Press a key to select an option
+        selectOption();
+
+    }
+
 }
