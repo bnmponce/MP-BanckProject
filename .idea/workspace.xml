@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29877c3d-54fb-4aba-9e24-58db4274c088" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Menus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -71,6 +72,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2487" y="189" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585261892833" />
+    <state x="658" y="216" key="chooseDestDirectoryDialog" timestamp="1585345403437">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="658" y="216" key="chooseDestDirectoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585345403437" />
     <state x="2683" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1585315721959">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
