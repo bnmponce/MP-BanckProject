@@ -12,19 +12,19 @@ public class BankAccount {
         this.accountNumber=accountNumber;
         this.total = 1000;
     }
-    public void withdraw(){
-        Scanner scanner = new Scanner(System.in);
+    public void withdraw(Scanner scanner){
         int amount;
         System.out.print("Insert the amount do you want to withdraw: ");
         amount=scanner.nextInt();
         if (amount <=this.total){
             this.total = this.total-amount;
-            System.out.print("Starting the withdraw ...");
-            System.out.print("please withdraw your cash");
-            System.out.print("Your balance is: "+ this.total);
+            System.out.println("Starting the withdraw ...");
+            System.out.println("please withdraw your cash");
+            System.out.println("Your balance is: "+ this.total);
         }
         else{
             System.out.print("insufficient balance");
         }
     }
+
 }

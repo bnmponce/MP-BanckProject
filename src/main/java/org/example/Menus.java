@@ -47,7 +47,7 @@ public class Menus{
                         closeApp=false;
                         break;
                     case 'W':
-                        bankAccount.withdraw();
+                        bankAccount.withdraw(scanner);
                         break;
                     default:
                         System.out.println(option + " is an invalid option");
