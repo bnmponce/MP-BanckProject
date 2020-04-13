@@ -5,21 +5,23 @@ public class Menus{
     String name ;
     String account;
 
-    public Menus(String name, String account ){
-        this.name=name;
-        this.account=account;
+    public void printWelcome(String name, String account){
 
-    }
-    public void printWelcome(){
+        BankAccount bankAccount = new BankAccount(name, account);
         // Welcome to the BankApp
         System.out.println("Welcome " + this.name);
         System.out.println("Your current account is " + this.account);
+        // Main Menu
+        printMenu();
+        // Press a key to select an option
+        selectOption(bankAccount);
     }
 
     public void printMenu(){
         // Main Menu
         System.out.println(System.lineSeparator());
         System.out.println("********************");
+        System.out.println("(A) Show all options");
         System.out.println("(W) Withdraw");
         System.out.println("(D) Deposit");
         System.out.println("(B) My Balance");
@@ -28,24 +30,40 @@ public class Menus{
         System.out.println("********************");
     }
 
-    public static void selectOption(){
+    public void selectOption(BankAccount bankAccount){
         // Press a key to select an option
         try (Scanner scanner = new Scanner(System.in)) {
+            boolean closeApp=true;
             char option;
-            do {
+            while (true){
                 System.out.print("Select an option: ");
-                option = (char) scanner.nextLine().trim().toUpperCase().charAt(0);
+                option = getSelectOption(scanner) ;
                 switch (option) {
+                    case 'A':
+                        printMenu();
+                        break;
                     case 'E':
                         System.out.println("Exit...");
+                        closeApp=false;
+                        break;
+                    case 'W':
+                        bankAccount.withdraw(scanner);
                         break;
                     default:
                         System.out.println(option + " is an invalid option");
                         break;
+                    //Is running
+
                 }
-                System.out.println(System.lineSeparator());
+                if (closeApp){
+                    break;
+                }
+
                 System.out.println("(A) Show All options");
-            } while (option != 'E');
+            }
         }
+    }
+    private char getSelectOption(Scanner scanner){
+        return scanner.nextLine().trim().toUpperCase().charAt(0);
     }
 }
