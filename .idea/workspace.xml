@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29877c3d-54fb-4aba-9e24-58db4274c088" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/BankAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ControllerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/OwnerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/interfaces/IAccountOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/interfaces/IInfoProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/DepositOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/operators/WithdrawOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/providers/AccountsByOwnerProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/providers/BalanceByAccountProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/providers/TransactionByAccountProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Owner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/interfaces/IDataSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/persistence/DataInMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/persistence/DataSaverInMemory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/view/console/ConsoleApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Menus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -29,14 +46,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/org/example/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../practices/NeidaPractice/NVBankAppProv1-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ConsoleApp">
+    <configuration name="ConsoleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.view.console.ConsoleApp" />
+      <module name="MP-BankProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.view.console.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MP-BankProject" />
@@ -46,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConsoleApp" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -68,34 +99,64 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2440" y="256" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585192468297" />
-    <state width="1337" height="185" key="GridCell.Tab.0.bottom" timestamp="1586214643369">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1586914610692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586914610692" />
+    <state x="2606" y="211" key="FileChooserDialogImpl" timestamp="1586978103081">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1337" height="185" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586214643369" />
-    <state width="1337" height="185" key="GridCell.Tab.0.center" timestamp="1586214643369">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586915136264" />
+    <state x="2606" y="211" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586978103081" />
+    <state width="1877" height="109" key="GridCell.Tab.0.bottom" timestamp="1586987251981">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1337" height="185" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586214643369" />
-    <state width="1337" height="185" key="GridCell.Tab.0.left" timestamp="1586214643369">
+    <state width="1493" height="109" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586828849028" />
+    <state width="1877" height="109" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586987251981" />
+    <state width="1877" height="109" key="GridCell.Tab.0.center" timestamp="1586987251981">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1337" height="185" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586214643369" />
-    <state width="1337" height="185" key="GridCell.Tab.0.right" timestamp="1586214643369">
+    <state width="1493" height="109" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586828849028" />
+    <state width="1877" height="109" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586987251981" />
+    <state width="1877" height="109" key="GridCell.Tab.0.left" timestamp="1586987251981">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1337" height="185" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586214643369" />
+    <state width="1493" height="109" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586828849028" />
+    <state width="1877" height="109" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586987251981" />
+    <state width="1877" height="109" key="GridCell.Tab.0.right" timestamp="1586987251981">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="109" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586828849028" />
+    <state width="1877" height="109" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586987251981" />
+    <state width="1875" height="347" key="GridCell.Tab.1.bottom" timestamp="1586749608134">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1875" height="347" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586749608134" />
+    <state width="1875" height="347" key="GridCell.Tab.1.center" timestamp="1586749608134">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1875" height="347" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586749608134" />
+    <state width="1875" height="347" key="GridCell.Tab.1.left" timestamp="1586749608134">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1875" height="347" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586749608134" />
+    <state width="1875" height="347" key="GridCell.Tab.1.right" timestamp="1586749608134">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1875" height="347" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586749608134" />
     <state x="2487" y="189" key="SettingsEditor" timestamp="1585261892833">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2487" y="189" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585261892833" />
-    <state x="658" y="216" key="chooseDestDirectoryDialog" timestamp="1585345403437">
+    <state x="658" y="216" key="chooseDestDirectoryDialog" timestamp="1586741155787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="658" y="216" key="chooseDestDirectoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585345403437" />
-    <state x="2683" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1585315721959">
+    <state x="658" y="216" key="chooseDestDirectoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586741155787" />
+    <state x="2683" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1586902758335">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2683" y="425" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585315721959" />
+    <state x="610" y="337" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1586825554296" />
+    <state x="2683" y="425" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586902758335" />
     <state x="2369" y="296" key="new project wizard" timestamp="1585262086179">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
